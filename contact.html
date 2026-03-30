@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact NightShield Pest Control for professional pest management services. Free inspections available.">
+  <title>Contact Us - NightShield Pest Control</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .form-group { margin-bottom: 1.5rem; }
+    .form-group label { display: block; margin-bottom: 0.5rem; color: var(--color-gray-300); font-weight: 600; }
+    .form-control { width: 100%; padding: 0.75rem 1rem; background-color: var(--color-zinc-900); border: 1px solid var(--color-zinc-700); border-radius: 0.5rem; color: white; font-size: 1rem; }
+    .form-control:focus { outline: none; border-color: var(--color-yellow-500); }
+    textarea.form-control { min-height: 120px; resize: vertical; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="contact-info">
+          <a href="tel:+13419394824"><svg class="icon"><use href="#icon-phone"/></svg><span>+1-341-939-482</span></a>
+          <a href="mailto:info@pestshield.in"><svg class="icon"><use href="#icon-mail"/></svg><span>info@pestshield.in</span></a>
+        </div>
+        <div class="emergency-text">24/7 Emergency Service Available</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container nav-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><svg viewBox="0 0 24 24"><use href="#icon-shield"/></svg></div>
+          <div class="logo-text"><h1>NightShield</h1><p>Pest Control</p></div>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <button class="dropdown-toggle">Services</button>
+            <div class="dropdown-menu">
+              <a href="termite-control.html">Termite Control</a>
+              <a href="bed-bug-treatment.html">Bed Bug Treatment</a>
+              <a href="rodent-control.html">Rodent Control</a>
+              <a href="cockroach-control.html">Cockroach Control</a>
+              <a href="mosquito-control.html">Mosquito Control</a>
+            </div>
+          </div>
+          <a href="residential.html">Residential</a>
+          <a href="commercial.html">Commercial</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-cta">
+          <a href="emergency.html" class="btn btn-emergency">Emergency</a>
+          <a href="contact.html" class="btn btn-primary">Get Free Inspection</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24"><use href="#icon-menu"/></svg></button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="residential.html">Residential</a>
+        <a href="commercial.html">Commercial</a>
+        <a href="emergency.html" style="color: var(--color-red-600);">Emergency Service</a>
+        <div class="mobile-services">
+          <div class="mobile-services-title">Services</div>
+          <a href="termite-control.html">Termite Control</a>
+          <a href="bed-bug-treatment.html">Bed Bug Treatment</a>
+          <a href="rodent-control.html">Rodent Control</a>
+          <a href="cockroach-control.html">Cockroach Control</a>
+          <a href="mosquito-control.html">Mosquito Control</a>
+        </div>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 3rem 0;">
+      <div class="container">
+        <div style="max-width: 48rem; margin: 0 auto; text-align: center;">
+          <h1 style="font-size: 3rem;">Get in <span class="highlight">Touch</span></h1>
+          <p style="font-size: 1.125rem; color: var(--color-gray-300);">Request a free inspection or speak with our pest control experts today.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr; gap: 3rem;">
+          <!-- Contact Form -->
+          <div style="background-color: var(--color-zinc-900); padding: 2rem; border-radius: 0.75rem;">
+            <h2 style="font-size: 1.875rem; font-weight: bold; margin-bottom: 1.5rem;">Request Free Inspection</h2>
+            <form id="contactForm">
+              <div class="grid grid-2" style="gap: 1rem;">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" class="form-control" required>
+                </div>
+              </div>
+              <div class="grid grid-2" style="gap: 1rem;">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone *</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address">Property Address *</label>
+                <input type="text" id="address" name="address" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed *</label>
+                <select id="service" name="service" class="form-control" required>
+                  <option value="">Select a service</option>
+                  <option value="termite">Termite Control</option>
+                  <option value="bedbugs">Bed Bug Treatment</option>
+                  <option value="rodents">Rodent Control</option>
+                  <option value="cockroaches">Cockroach Control</option>
+                  <option value="mosquitoes">Mosquito Control</option>
+                  <option value="general">General Pest Control</option>
+                  <option value="commercial">Commercial Services</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Additional Details</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Tell us about your pest problem..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                <svg width="20" height="20"><use href="#icon-shield"/></svg>
+                Submit Request
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h2 style="font-size: 1.875rem; font-weight: bold; margin-bottom: 2rem;">Contact Information</h2>
+            <div class="grid grid-2" style="gap: 1.5rem; margin-bottom: 3rem;">
+              <div style="background-color: var(--color-zinc-900); padding: 1.5rem; border-radius: 0.75rem;">
+                <div style="background-color: rgba(234, 179, 8, 0.1); width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                  <svg width="24" height="24" style="color: var(--color-yellow-500);"><use href="#icon-phone"/></svg>
+                </div>
+                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Call Us</h3>
+                <a href="tel:+13419394824" style="color: var(--color-yellow-500); font-size: 1.125rem;">+1-341-939-482</a>
+                <p style="color: var(--color-gray-400); font-size: 0.875rem; margin-top: 0.25rem;">24/7 Emergency Line</p>
+              </div>
+
+              <div style="background-color: var(--color-zinc-900); padding: 1.5rem; border-radius: 0.75rem;">
+                <div style="background-color: rgba(234, 179, 8, 0.1); width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                  <svg width="24" height="24" style="color: var(--color-yellow-500);"><use href="#icon-mail"/></svg>
+                </div>
+                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Email Us</h3>
+                <a href="mailto:info@pestshield.in" style="color: var(--color-yellow-500); font-size: 1.125rem;">info@pestshield.in</a>
+                <p style="color: var(--color-gray-400); font-size: 0.875rem; margin-top: 0.25rem;">We reply within 24 hours</p>
+              </div>
+
+              <div style="background-color: var(--color-zinc-900); padding: 1.5rem; border-radius: 0.75rem;">
+                <div style="background-color: rgba(234, 179, 8, 0.1); width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                  <svg width="24" height="24" style="color: var(--color-yellow-500);"><use href="#icon-clock"/></svg>
+                </div>
+                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Business Hours</h3>
+                <p style="color: var(--color-gray-300);">Mon-Fri: 7am-7pm</p>
+                <p style="color: var(--color-gray-300);">Sat-Sun: 8am-5pm</p>
+              </div>
+
+              <div style="background-color: var(--color-zinc-900); padding: 1.5rem; border-radius: 0.75rem;">
+                <div style="background-color: rgba(234, 179, 8, 0.1); width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                  <svg width="24" height="24" style="color: var(--color-yellow-500);"><use href="#icon-map-pin"/></svg>
+                </div>
+                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Service Areas</h3>
+                <p style="color: var(--color-gray-300);">All major cities across the USA</p>
+                <a href="areas.html" style="color: var(--color-yellow-500); font-size: 0.875rem;">View All Areas →</a>
+              </div>
+            </div>
+
+            <div style="background-color: var(--color-zinc-900); padding: 2rem; border-radius: 0.75rem;">
+              <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Why Choose NightShield?</h3>
+              <ul style="list-style: none; padding: 0;">
+                <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 0.75rem;">
+                  <svg width="20" height="20" style="color: var(--color-yellow-500); flex-shrink: 0; margin-top: 0.125rem;"><use href="#icon-check-circle"/></svg>
+                  <span style="color: var(--color-gray-300);">Licensed & certified technicians</span>
+                </li>
+                <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 0.75rem;">
+                  <svg width="20" height="20" style="color: var(--color-yellow-500); flex-shrink: 0; margin-top: 0.125rem;"><use href="#icon-check-circle"/></svg>
+                  <span style="color: var(--color-gray-300);">Eco-friendly & family-safe treatments</span>
+                </li>
+                <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 0.75rem;">
+                  <svg width="20" height="20" style="color: var(--color-yellow-500); flex-shrink: 0; margin-top: 0.125rem;"><use href="#icon-check-circle"/></svg>
+                  <span style="color: var(--color-gray-300);">100% satisfaction guarantee</span>
+                </li>
+                <li style="display: flex; align-items: start; gap: 0.75rem;">
+                  <svg width="20" height="20" style="color: var(--color-yellow-500); flex-shrink: 0; margin-top: 0.125rem;"><use href="#icon-check-circle"/></svg>
+                  <span style="color: var(--color-gray-300);">Same-day emergency services available</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <div style="background-color: var(--color-yellow-500); padding: 0.5rem; border-radius: 0.375rem;"><svg width="24" height="24"><use href="#icon-shield"/></svg></div>
+            <div><div style="color: var(--color-yellow-500); font-weight: bold;">NightShield</div><div style="font-size: 0.75rem; color: var(--color-gray-400);">Pest Control</div></div>
+          </div>
+          <p>Professional pest control services across the USA.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><svg width="16" height="16"><use href="#icon-facebook"/></svg></a>
+            <a href="#" class="social-link"><svg width="16" height="16"><use href="#icon-twitter"/></svg></a>
+            <a href="#" class="social-link"><svg width="16" height="16"><use href="#icon-instagram"/></svg></a>
+            <a href="#" class="social-link"><svg width="16" height="16"><use href="#icon-linkedin"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="areas.html">Service Areas</a></li></ul>
+        </div>
+        <div class="footer-section">
+          <h3>Our Services</h3>
+          <ul><li><a href="termite-control.html">Termite Control</a></li><li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li><li><a href="rodent-control.html">Rodent Control</a></li><li><a href="cockroach-control.html">Cockroach Control</a></li><li><a href="mosquito-control.html">Mosquito Control</a></li><li><a href="residential.html">Residential</a></li><li><a href="commercial.html">Commercial</a></li></ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="contact-item"><svg width="16" height="16"><use href="#icon-phone"/></svg><div><a href="tel:+13419394824">+1-341-939-482</a><div style="font-size: 0.75rem; color: var(--color-gray-500);">24/7 Emergency</div></div></div>
+          <div class="contact-item"><svg width="16" height="16"><use href="#icon-mail"/></svg><a href="mailto:info@pestshield.in">info@pestshield.in</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NightShield Pest Control. All rights reserved.</p>
+        <div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
